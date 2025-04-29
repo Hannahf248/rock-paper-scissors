@@ -1,15 +1,13 @@
-console.log("Hello World")
-
 // create function getComputerChoice which returns a variable (rock, paper scissors)
 
-function getComputerChoice(choice) {
+function getComputerChoice() {
     let choice = Math.random() * 3;
     if (choice <= 1) {
-        choice = "option1";
+        choice = "rock";
     } else if (choice <= 2) {
-        choice = "option2";
+        choice = "paper";
     } else {
-        choice = "option3";
+        choice = "scissors";
     }
 }
 

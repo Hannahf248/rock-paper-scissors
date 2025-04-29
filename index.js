@@ -23,8 +23,8 @@ return humanChoice;
 
 // declare the players score variables
 
-let = humanScore;
-let = computerScore;
+let humanScore = 0;
+let computerScore = 0;
 
 
 

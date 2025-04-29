@@ -9,6 +9,7 @@ function getComputerChoice() {
     } else {
         choice = "scissors";
     }
+    return choice;
 }
 
 

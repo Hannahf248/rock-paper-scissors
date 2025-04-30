@@ -32,16 +32,25 @@ let computerScore = 0;
 
 function playRound(humanChoice, computerChoice) {
 // make human choice case insensitive using .toLowerCase
-let humanChoice = 0;
-let computerChoice = 0;
 
 // if computer and human choose same variable = draw
+if (humanChoice === computerChoice) {
+    return "It's a drawer!";
+}
 
 // if computer chooses rock and human chooses scissors = human loses
-
 // if computer chooses scissors and human chooses paper = human loses
-
 // if computer chooses paper and human chooses rock = human loses
+ else if (computerChoice === "rock" && humanChoice === "scissors" || 
+        computerChoice === "scissors" && humanChoice === "paper" || computerChoice === "paper" && humanChoice === "rock") {
+    computerChoice = computerChoice ++;
+    return "You lose!"
+ }
+
+
+
+
+
 
 // console log human loses
 

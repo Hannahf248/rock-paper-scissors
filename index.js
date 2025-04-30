@@ -48,7 +48,14 @@ const humanLoses = (
         (computerChoice === "scissors" && humanChoice === "paper") || 
         (computerChoice === "paper" && humanChoice === "rock") 
  
-        )
+        );
+        if (humanLoses) {
+            computerScore++;
+            return "You lose!";
+        } else {
+            humanScore++;
+            return "You win!";
+        }
 }
 
 // console log human loses

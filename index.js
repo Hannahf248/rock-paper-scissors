@@ -58,23 +58,28 @@ const humanLoses = (
         }
 }
 
-// console log human loses
+function playGame() {
+    // Loop through 5 rounds
+    for (let i = 0; i < 5; i++)
+        // call the getHumanChoice and computerChoice functions 
+    {
+        const humanChoice = getHumanChoice();
+        const computerChoice = getComputerChoice();
 
-// if computer chooses scissors and human chooses rock = human wins
+        //call the playRound function to log the outcome and update human score/ computer score
+        console.log(playRound(humanChoice, computerChoice));
+        console.log(`Score => You: ${humanScore}, Computer: ${computerScore}`);
+    }
 
-// if computer chooses paper and human chooses scissors = human wins
-
-// if computer chooses rock and human chooses paper = human wins
-
-// console log human wins
-
-// increment human score or computer score variable based on round winner
-
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
-
-playRound(humanSelection, computerSelection);
-
+    // Final result
+    if (humanScore > computerScore) {
+        console.log("Congratulations, you won the game!");
+    } else if (humanScore < computerScore) {
+        console.log("Sorry, you lost the game.");
+    } else {
+        console.log("The game is a draw!");
+    }
 }
 
-
+// Start the game
+playGame();

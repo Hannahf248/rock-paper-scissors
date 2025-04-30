@@ -17,7 +17,7 @@ function getComputerChoice() {
 
 function getHumanChoice() {
     let humanChoice = prompt("Please enter Rock, Paper or Scissors")
-    humanChoice = humanChoice.toLowerCase;
+    humanChoice = humanChoice.toLowerCase();
 // return the users choice
 return humanChoice;
 }
@@ -31,7 +31,9 @@ let computerScore = 0;
 // create new function playRound
 
 function playRound(humanChoice, computerChoice) {
-// make human choice case insensitive using .toLowerCase
+// console.log choices
+console.log (`You chose ${humanChoice}`);
+console.log (`Computer chose ${computerChoice}`);
 
 // if computer and human choose same variable = draw
 if (humanChoice === computerChoice) {
@@ -46,11 +48,7 @@ if (humanChoice === computerChoice) {
     computerChoice = computerChoice ++;
     return "You lose!"
  }
-
-
-
-
-
+}
 
 // console log human loses
 
